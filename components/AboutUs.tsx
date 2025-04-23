@@ -2,7 +2,10 @@
 
 function AboutUs() {
     return (
-        <div id="aboutus" className="flex flex-col md:flex-row items-center h-screen max-w-7xl mx-auto justify-between w-full px-4 md:px-10 lg:px-16 py-10 gap-8">
+        <div
+            id="aboutus"
+            className="flex flex-col md:flex-row items-center h-screen max-w-7xl mx-auto justify-between w-full px-4 md:px-10 lg:px-16 py-10 gap-8"
+        >
             {/* Image Section */ }
             <div className="w-full md:w-2/5">
                 <img
@@ -14,12 +17,12 @@ function AboutUs() {
 
             {/* Text Section */ }
             <div className="w-full md:w-3/5 flex flex-col justify-center text-center md:text-left">
-                <div className="text-4xl text-black font-black font-marker">
+                <div className="text-4xl text-[#003DA5] font-black font-marker">
                     <p>About Us</p>
-                    <hr className="my-4 border-t-2 border-gray-300 w-24 mx-auto md:mx-0" />
+                    <hr className="my-4 border-t-2 border-[#CBD5F7] w-24 mx-auto md:mx-0" />
                 </div>
 
-                <p className="text-lg font-normal text-gray-700 leading-relaxed">
+                <p className="text-lg font-normal text-[#003DA5] leading-relaxed">
                     At Flow Prospect, we know you&apos;re the kind of sales leader who wants to be known for driving new revenue. In order to make a meaningful impact, you need to enable your sales team to create opportunities and close new deals.
                     <br /> <br />
 
