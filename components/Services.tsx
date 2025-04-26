@@ -30,7 +30,7 @@ export default function ServicesSection() {
     return (
         <section className="bg-white py-20 px-6">
             <div className="max-w-6xl mx-auto text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#003DA5] mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                     Lead generation services that win clients
                 </h2>
                 <p className="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -43,7 +43,7 @@ export default function ServicesSection() {
                 { services.map((service, index) => (
                     <div
                         key={ index }
-                        className="border border-gray-200 rounded-xl p-6 bg-white hover:shadow-xl transition duration-300 text-left"
+                        className="border cursor-pointer border-gray-200 rounded-xl p-6 bg-white hover:shadow-xl transition duration-300 text-left"
                     >
                         <h3 className="text-xl font-semibold text-[#0061FF] mb-3">
                             { service.title }
