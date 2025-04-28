@@ -19,7 +19,7 @@ export default function DemoBookingSection() {
 
                     {/* Heading */ }
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                        Interested to find out if Funnel can work for you?
+                        Interested to find out if Flow Prospect can work for you?
                     </h2>
 
                     {/* Subheading */ }
