@@ -1,67 +1,76 @@
-const services = [
-    {
-        title: 'Appointment setting',
-        description:
-            'Comprehensive B2B appointment booking designed to maximize lead-to-deal conversions. Start securing new opportunities within weeks.',
-    },
-    {
-        title: 'LinkedIn Ads',
-        description:
-            'Enhance engagement, appointment attendance, and conversion rates with precisely targeted LinkedIn outreach campaigns.',
-    },
-    {
-        title: 'LinkedIn Lead Generation',
-        description:
-            'Boost your appointment rate by 30% through personalized phone conversations with prospects, turning them into solid deals.',
-    },
-    {
-        title: 'Sales Automation',
-        description:
-            'Cultivate strong partnerships with high-value accounts using hyper-targeted and personalized outreach strategies.',
-    },
-    {
-        title: 'Web Development',
-        description:
-            'Increase your sales closing rate by 15% through effective brand development and direct prospect engagement.',
-    },
-];
+// components/LeadServicesSimple.tsx
 
-export default function ServicesSection() {
+import { PhoneCall, Laptop, MessageSquare, TrendingUp, Users } from "lucide-react";
+
+export default function LeadServicesSimple() {
+    const services = [
+        {
+            title: "Appointment Setting",
+            description: "B2B appointment booking designed to maximize lead-to-deal conversions. Secure new opportunities fast.",
+            button: "Book Appointments",
+            icon: PhoneCall,
+            bg: "bg-pink-400",
+        },
+        {
+            title: "LinkedIn Ads",
+            description: "Enhance engagement, appointment rates, and conversions with hyper-targeted LinkedIn campaigns.",
+            button: "Launch Campaigns",
+            icon: MessageSquare,
+            bg: "bg-orange-400",
+        },
+        {
+            title: "LinkedIn Lead Generation",
+            description: "Boost appointment rates by 30% with personalized outreach and warm prospect conversations.",
+            button: "Start Generating Leads",
+            icon: Users,
+            bg: "bg-blue-400",
+        },
+        {
+            title: "Sales Automation",
+            description: "Build strong partnerships with high-value accounts using automated hyper-targeted outreach.",
+            button: "Automate Sales",
+            icon: TrendingUp,
+            bg: "bg-green-400",
+        },
+        {
+            title: "Web Development",
+            description: "Increase your closing rate with effective brand development and direct engagement websites.",
+            button: "Build Your Website",
+            icon: Laptop,
+            bg: "bg-gray-400",
+        },
+        {
+            title: "Digital Marketing",
+            description: "Maximize your online presence with tailored digital marketing strategies and campaigns.",
+            button: "Start Marketing",
+            icon: PhoneCall,
+            bg: "bg-purple-400",
+        }
+    ];
+
     return (
-        <section className="bg-white py-20 px-6">
-            <div className="max-w-6xl mx-auto text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-                    Lead generation services that win clients
-                </h2>
-                <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                    Focus on scaling your business while we deliver a steady stream of
-                    pre-qualified business leads directly to your pipeline.
-                </p>
-            </div>
+        <section className="bg-black py-20 px-6">
+            <div className="max-w-7xl mx-auto">
+                <h2 className="text-4xl font-bold text-white mb-4">Power your lead generation</h2>
+                <p className="text-gray-400 mb-16">Scale your business faster with a steady stream of pre-qualified leads delivered directly to your pipeline.</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                { services.map((service, index) => (
-                    <div
-                        key={ index }
-                        className="border cursor-pointer border-gray-200 rounded-xl p-6 bg-white hover:shadow-xl transition duration-300 text-left"
-                    >
-                        <h3 className="text-xl font-semibold text-[#0061FF] mb-3">
-                            { service.title }
-                        </h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                            { service.description }
-                        </p>
-                    </div>
-                )) }
-            </div>
-
-            <div className="text-center mt-16">
-                <h3 className="text-2xl font-medium text-[#003DA5] mb-4">
-                    Unleash your sales potential with our lead generation services
-                </h3>
-                <button className="mt-2 bg-[#0061FF] cursor-pointer text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#004DCC] transition">
-                    Book a call
-                </button>
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    { services.map((service, index) => (
+                        <div
+                            key={ index }
+                            className={ `${service.bg} rounded-lg p-8 flex flex-col justify-between` }
+                        >
+                            <div>
+                                <service.icon className="w-8 h-8 text-black mb-6" />
+                                <h3 className="text-xl font-bold text-black mb-4">{ service.title }</h3>
+                                <p className="text-black text-sm opacity-90">{ service.description }</p>
+                            </div>
+                            <button className="mt-8 bg-black text-white text-sm px-4 py-2 rounded-md hover:bg-gray-800 transition w-max">
+                                { service.button } →
+                            </button>
+                        </div>
+                    )) }
+                </div>
             </div>
         </section>
     );
