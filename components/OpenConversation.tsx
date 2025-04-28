@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion"; // Framer Motion for an
 const data = [
     {
         id: "startups",
-        title: "Startups",
+        title: "Marketing Automation",
         short: "Focus on product — let us handle your pipeline",
         bullets: [
             "Instantly build a qualified sales pipeline without in-house hires",
@@ -43,7 +43,7 @@ const data = [
     },
     {
         id: "enterprise",
-        title: "Enterprise Sales Teams",
+        title: "Sales Prospecting",
         short: "Pre-qualified meetings, at scale",
         bullets: [
             "Fuel your sales teams with pre-qualified meetings at scale",

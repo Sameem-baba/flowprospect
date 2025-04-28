@@ -1,4 +1,5 @@
 
+import DemoBookingSection from "@/components/BookADemo";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -15,6 +16,7 @@ export default function Home() {
       <Features />
       <OpenConversation />
       <ServicesSection />
+      <DemoBookingSection />
 
       <Footer />
     </div>

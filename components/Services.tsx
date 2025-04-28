@@ -58,14 +58,14 @@ export default function LeadServicesSimple() {
                     { services.map((service, index) => (
                         <div
                             key={ index }
-                            className={ `${service.bg} rounded-lg p-8 flex flex-col justify-between` }
+                            className={ `${service.bg}  p-8 flex flex-col justify-between` }
                         >
                             <div>
                                 <service.icon className="w-8 h-8 text-black mb-6" />
                                 <h3 className="text-xl font-bold text-black mb-4">{ service.title }</h3>
                                 <p className="text-black text-sm opacity-90">{ service.description }</p>
                             </div>
-                            <button className="mt-8 bg-black text-white text-sm px-4 py-2 rounded-md hover:bg-gray-800 transition w-max">
+                            <button className="mt-8 bg-black text-white text-sm px-4 py-2  hover:bg-gray-800 transition w-max">
                                 { service.button } →
                             </button>
                         </div>
