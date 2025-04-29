@@ -15,7 +15,7 @@ export default function Footer() {
 
                 {/* Address */ }
                 <div>
-                    <h3 className="text-lg font-semibold mb-4">Address</h3>
+                    <h3 className="text-lg font-semibold mb-4 font-[electrolize]">Address</h3>
                     <div className="flex flex-col items-start gap-2 mb-2">
                         <div className="flex items-start gap-2">
                             <MapPinIcon className="w-5 h-5 mt-1" />
@@ -52,7 +52,7 @@ export default function Footer() {
 
                 {/* Links */ }
                 <div>
-                    <h3 className="text-lg font-semibold mb-4">Links</h3>
+                    <h3 className="text-lg font-semibold mb-4 font-[electrolize]">Links</h3>
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-[#FFD43B] transition">About</a></li>
                         <li><a href="#" className="hover:text-[#FFD43B] transition">What we Do</a></li>
@@ -64,13 +64,13 @@ export default function Footer() {
 
                 {/* Subscribe */ }
                 <div>
-                    <h3 className="text-lg font-semibold mb-4">Subscribe</h3>
+                    <h3 className="text-lg font-semibold mb-4 font-[electrolize]">Subscribe</h3>
                     <input
                         type="email"
                         placeholder="Enter email"
                         className="w-full px-4 py-2 rounded-md border border-white bg-transparent text-white placeholder:text-white focus:outline-none mb-4"
                     />
-                    <button className="w-full bg-[#0061FF] hover:bg-[#004DCC] transition text-white font-semibold py-2 rounded-md">
+                    <button className="w-full font-[electrolize] bg-[#0061FF] hover:bg-[#004DCC] transition text-white font-semibold py-2 rounded-md">
                         Subscribe
                     </button>
                 </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Electrolize, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +11,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: [ "latin" ],
 });
+
+const electrolize = Electrolize({
+  variable: "--font-electrolize",
+  weight: [ "400" ],
+  subsets: [ "latin" ],
+})
 
 export const metadata: Metadata = {
   title: "Flow Prospect",
@@ -25,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={ `${geistSans.variable} ${geistMono.variable} antialiased` }
+        className={ `${geistSans.variable} ${electrolize.variable} ${geistMono.variable} antialiased` }
       >
         { children }
       </body>

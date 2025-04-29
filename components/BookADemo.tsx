@@ -18,7 +18,7 @@ export default function DemoBookingSection() {
                     </div>
 
                     {/* Heading */ }
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-3xl font-[electrolize] font-bold text-gray-900 mb-4">
                         Interested to find out if Flow Prospect can work for you?
                     </h2>
 
@@ -52,7 +52,7 @@ export default function DemoBookingSection() {
 
                 {/* Right Side */ }
                 <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-                    <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h3 className="text-2xl font-semibold font-[electrolize] text-gray-900 mb-4">
                         Schedule your free demo
                     </h3>
                     <p className="text-gray-700 mb-6">
@@ -67,7 +67,7 @@ export default function DemoBookingSection() {
                         />
                         <button
                             type="submit"
-                            className="bg-black text-white py-3 rounded-md font-semibold hover:bg-gray-800 transition">
+                            className="bg-black font-[electrolize] text-white py-3 rounded-md font-semibold hover:bg-gray-800 transition">
                             Get a demo
                         </button>
                     </form>

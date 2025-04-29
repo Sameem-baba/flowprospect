@@ -51,7 +51,7 @@ export default function LeadServicesSimple() {
     return (
         <section className="bg-black py-20 px-6">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-4xl font-bold text-white mb-4">Power your lead generation</h2>
+                <h2 className="text-4xl font-bold font-[electrolize] text-white mb-4">Power your lead generation</h2>
                 <p className="text-gray-400 mb-16">Scale your business faster with a steady stream of pre-qualified leads delivered directly to your pipeline.</p>
 
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -62,10 +62,10 @@ export default function LeadServicesSimple() {
                         >
                             <div>
                                 <service.icon className="w-8 h-8 text-black mb-6" />
-                                <h3 className="text-xl font-bold text-black mb-4">{ service.title }</h3>
+                                <h3 className="text-xl font-bold text-black mb-4 font-[electrolize]">{ service.title }</h3>
                                 <p className="text-black text-sm opacity-90">{ service.description }</p>
                             </div>
-                            <button className="mt-8 bg-black text-white text-sm px-4 py-2  hover:bg-gray-800 transition w-max">
+                            <button className="mt-8 bg-black font-[electrolize] text-white text-sm px-4 py-2  hover:bg-gray-800 transition w-max">
                                 { service.button } →
                             </button>
                         </div>

@@ -69,7 +69,7 @@ export default function OpenConversation() {
         <section className="bg-[#f7f9fa] text-black py-16 px-6 md:px-12 lg:px-24">
             {/* Heading */ }
             <div className="max-w-4xl mx-auto text-center mb-16">
-                <h2 className="text-4xl font-bold mb-4">Open the conversation</h2>
+                <h2 className="text-4xl font-bold font-[electrolize] mb-4">Open the conversation</h2>
                 <p className="text-gray-500 text-lg">
                     Working with us opens direct, quality channels to your future clients. Whether you&apos;re a startup, growing business, or an enterprise team — we power your sales growth.
                 </p>
@@ -98,7 +98,7 @@ export default function OpenConversation() {
                                         <path d="M12 2C6.48 2 2 4.69 2 8v8c0 3.31 4.48 6 10 6s10-2.69 10-6V8c0-3.31-4.48-6-10-6zM4 8c0-1.66 3.58-3 8-3s8 1.34 8 3-3.58 3-8 3-8-1.34-8-3zm8 11c-4.42 0-8-1.79-8-4v-2c1.66 1.24 4.11 2 8 2s6.34-.76 8-2v2c0 2.21-3.58 4-8 4z" />
                                     </svg>
                                 </div>
-                                <h3 className="text-lg font-semibold">{ item.title }</h3>
+                                <h3 className="text-lg font-semibold font-[electrolize]">{ item.title }</h3>
                             </div>
 
                             {/* Descriptions */ }
@@ -134,7 +134,7 @@ export default function OpenConversation() {
                             transition={ { duration: 0.4 } }
                         >
                             <div>
-                                <h3 className="text-4xl font-bold mb-2">{ current?.percent }</h3>
+                                <h3 className="text-4xl font-bold mb-2 font-[electrolize]">{ current?.percent }</h3>
                                 <p className="text-gray-700 mb-6">{ current?.subtitle }</p>
                                 <p className="text-gray-600 mb-8">“{ current?.quote }”</p>
                             </div>
@@ -142,14 +142,14 @@ export default function OpenConversation() {
                             <div className="flex items-center gap-4">
                                 <img src={ current?.avatar } alt={ current?.author } className="w-10 h-10 rounded-full bg-gray-200" />
                                 <div>
-                                    <p className="font-semibold">{ current?.author }</p>
+                                    <p className="font-semibold font-[electrolize]">{ current?.author }</p>
                                     <p className="text-gray-500 text-sm">{ current?.role }</p>
                                     <p className="text-gray-500 text-sm">{ current?.company }</p>
                                 </div>
                             </div>
 
                             <div className="mt-6 text-right">
-                                <a href="#" className="text-black font-semibold hover:underline flex items-center justify-end gap-2">
+                                <a href="#" className="text-black font-[electrolize] font-semibold  flex items-center justify-end gap-2">
                                     Read the case study
                                     <span className="text-lg">&rarr;</span>
                                 </a>

@@ -57,13 +57,13 @@ export default function FeaturesSection() {
                 { features.map((feature, index) => (
                     <div key={ index } className="flex flex-col items-start space-y-4">
                         <feature.icon className="h-8 w-8 text-[#FFD43B]" />
-                        <h3 className="text-xl font-semibold text-white">{ feature.title }</h3>
+                        <h3 className="text-xl font-semibold text-white font-[electrolize]">{ feature.title }</h3>
                         <p className="text-white text-sm leading-relaxed">{ feature.description }</p>
                     </div>
                 )) }
             </div>
             <div className="max-w-6xl flex flex-col items-center mx-auto justify-center mt-20">
-                <h2 className="text-xl md:text-2xl font-medium mb-12">
+                <h2 className="text-xl font-[electrolize] md:text-2xl font-medium mb-12">
                     Unlocking marketing intelligence for over 2,500 customers
                 </h2>
 
@@ -98,7 +98,7 @@ export default function FeaturesSection() {
                         <p className="uppercase text-sm font-semibold text-gray-200 mb-4 tracking-wide">
                             Powerful Integrations
                         </p>
-                        <h2 className="text-4xl font-bold mb-4">
+                        <h2 className="text-4xl font-[electrolize] font-bold mb-4">
                             Unify data without limits
                         </h2>
                         <p className="text-lg text-gray-300 mb-6">
@@ -107,10 +107,10 @@ export default function FeaturesSection() {
                     </div>
 
                     <div className="flex flex-row gap-4 shrink-0">
-                        <button className="bg-white text-black px-6 py-2 font-semibold rounded">
+                        <button className="bg-white font-[electrolize] text-black px-6 py-2 font-semibold rounded">
                             Browse connectors
                         </button>
-                        <button className="bg-white text-black px-6 py-2 font-semibold rounded">
+                        <button className="bg-white font-[electrolize] text-black px-6 py-2 font-semibold rounded">
                             Browse destinations
                         </button>
                     </div>
