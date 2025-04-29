@@ -107,10 +107,10 @@ export default function FeaturesSection() {
                     </div>
 
                     <div className="flex flex-row gap-4 shrink-0">
-                        <button className="bg-white font-[electrolize] text-black px-6 py-2 font-semibold rounded">
+                        <button className="bg-white font-[electrolize] text-black px-6 py-2 font-semibold ">
                             Browse connectors
                         </button>
-                        <button className="bg-white font-[electrolize] text-black px-6 py-2 font-semibold rounded">
+                        <button className="bg-white font-[electrolize] text-black px-6 py-2 font-semibold ">
                             Browse destinations
                         </button>
                     </div>
