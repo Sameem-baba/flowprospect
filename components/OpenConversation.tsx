@@ -70,7 +70,7 @@ export default function OpenConversation() {
             {/* Heading */ }
             <div className="max-w-4xl mx-auto text-center mb-16">
                 <h2 className="text-4xl font-bold font-[electrolize] mb-4">Open the conversation</h2>
-                <p className="text-gray-500 text-lg">
+                <p className="text-gray-500 font-[roboto] text-lg">
                     Working with us opens direct, quality channels to your future clients. Whether you&apos;re a startup, growing business, or an enterprise team — we power your sales growth.
                 </p>
             </div>
@@ -103,13 +103,13 @@ export default function OpenConversation() {
 
                             {/* Descriptions */ }
                             { selected === item.id ? (
-                                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                                <ul className="list-disc list-inside font-[roboto] text-gray-700 space-y-2">
                                     { item.bullets.map((point, idx) => (
                                         <li key={ idx }>{ point }</li>
                                     )) }
                                 </ul>
                             ) : (
-                                <p className="text-gray-700">{ item.short }</p>
+                                <p className="text-gray-700 font-[roboto]">{ item.short }</p>
                             ) }
 
                             {/* Animated underline */ }
@@ -135,16 +135,16 @@ export default function OpenConversation() {
                         >
                             <div>
                                 <h3 className="text-4xl font-bold mb-2 font-[electrolize]">{ current?.percent }</h3>
-                                <p className="text-gray-700 mb-6">{ current?.subtitle }</p>
-                                <p className="text-gray-600 mb-8">“{ current?.quote }”</p>
+                                <p className="text-gray-700 mb-6 ">{ current?.subtitle }</p>
+                                <p className="text-gray-600 mb-8 font-[roboto]">“{ current?.quote }”</p>
                             </div>
 
                             <div className="flex items-center gap-4">
                                 <img src={ current?.avatar } alt={ current?.author } className="w-10 h-10 rounded-full bg-gray-200" />
                                 <div>
                                     <p className="font-semibold font-[electrolize]">{ current?.author }</p>
-                                    <p className="text-gray-500 text-sm">{ current?.role }</p>
-                                    <p className="text-gray-500 text-sm">{ current?.company }</p>
+                                    <p className="text-gray-500 text-sm font-[roboto]">{ current?.role }</p>
+                                    <p className="text-gray-500 text-sm font-[roboto]">{ current?.company }</p>
                                 </div>
                             </div>
 

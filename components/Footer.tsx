@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
     return (
-        <footer className="bg-[#003DA5] text-white pt-16 pb-6 px-6">
+        <footer className="bg-[#003DA5] text-white font-[roboto] pt-16 pb-6 px-6">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
 
                 {/* Address */ }

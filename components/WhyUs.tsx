@@ -58,7 +58,7 @@ export default function FeaturesSection() {
                     <div key={ index } className="flex flex-col items-start space-y-4">
                         <feature.icon className="h-8 w-8 text-[#FFD43B]" />
                         <h3 className="text-xl font-semibold text-white font-[electrolize]">{ feature.title }</h3>
-                        <p className="text-white text-sm leading-relaxed">{ feature.description }</p>
+                        <p className="text-white text-sm leading-relaxed font-[roboto]">{ feature.description }</p>
                     </div>
                 )) }
             </div>
@@ -101,7 +101,7 @@ export default function FeaturesSection() {
                         <h2 className="text-4xl font-[electrolize] font-bold mb-4">
                             Unify data without limits
                         </h2>
-                        <p className="text-lg text-gray-300 mb-6">
+                        <p className="text-lg text-gray-300 mb-6 font-[roboto]">
                             With robust integrations from the industry’s largest library of connectors and data destinations, you can reliably gather all your data in one place, without any limitations.
                         </p>
                     </div>

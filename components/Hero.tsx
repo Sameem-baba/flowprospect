@@ -31,7 +31,7 @@ function Hero() {
                     <h1 className="text-5xl font-[electrolize] font-normal tracking-tight text-gray-100 sm:text-7xl">
                         Unlock Growth with Targeted Lead Generation
                     </h1>
-                    <p className="mt-8 text-lg font-medium text-gray-300 sm:text-xl">
+                    <p className="mt-8 text-lg font-[roboto] font-medium text-gray-300 sm:text-xl">
                         We don’t just generate leads—we create high-impact sales opportunities that drive measurable ROI and long-term success
                     </p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">

@@ -23,12 +23,12 @@ export default function DemoBookingSection() {
                     </h2>
 
                     {/* Subheading */ }
-                    <p className="text-gray-700 mb-6">
+                    <p className="text-gray-700 mb-6 font-[roboto]">
                         Book a quick, no-obligation discovery call.
                     </p>
 
                     {/* Bullet Points */ }
-                    <ul className="space-y-4 text-gray-700">
+                    <ul className="space-y-4 text-gray-700 font-[roboto]">
                         <li className="flex items-start">
                             <span className="text-green-600 text-xl mr-3">✔️</span>
                             Discuss your needs and challenges
@@ -55,14 +55,14 @@ export default function DemoBookingSection() {
                     <h3 className="text-2xl font-semibold font-[electrolize] text-gray-900 mb-4">
                         Schedule your free demo
                     </h3>
-                    <p className="text-gray-700 mb-6">
+                    <p className="text-gray-700 mb-6 font-[roboto]">
                         Please share your email, then select a convenient date and time for your demo.
                     </p>
                     <form className="flex flex-col gap-4">
                         <input
                             type="email"
                             placeholder="Work Email*"
-                            className="border border-gray-300 p-3 placeholder:text-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                            className="border font-[roboto] border-gray-300 p-3 placeholder:text-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
                             required
                         />
                         <button
